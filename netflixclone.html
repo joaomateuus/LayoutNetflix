@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--------CSS/OWLCSS---------------------------------------------------------------->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/netflixstyle.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+   
+    <!----------------------------------------------------------------------------------> 
+    <title>Netflix</title>
+
+</head>
+<body>
+<!----------------------CABEÇALHO DA PÁGINA------------------------------->
+    
+    <header>
+        
+        <div class="container">
+            <img class="logo" src="./style/NetflixLogo.png" alt="logo">
+
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+ <!--Banner House of cards------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ <main>
+     <div class="filme-principal">
+         <div class="container">
+             <h3 class="titulo">House Of Cards</h3>
+                
+             <p class="descricao">Com Frank fora da jogada, Claire Underwood pode exercer todo o seu poder, como a primeira presidente mulher dos Estados Unidos. Mas poderosos inimigos estão à espreita.</p>
+                <!-------------Botoes----------------------->
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                         <em class="fas fa-play"></em>   
+                           <strong>Assistir </strong> 
+                        </button>
+            
+                        <button role="button" class="botao">
+                        <em class="fas fa-info-circle"></em>
+                            <strong>Mais Informações</strong> 
+                        </button>
+                    </div>
+                <!-------------------------------------------->    
+        </div>
+     </div>
+ 
+ <!-------Carrousel de filmes---------------------------------------------------------------------------------------------------->
+    
+ <div class="carrosel-filmes">
+     <h1>Populares no Netflix</h1>
+    <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="./style/mini1.jpg" alt="mini1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini2.jpg" alt="mini2">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini3.jpg" alt="mini3">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini4.jpg" alt="img4">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini5.jpg" alt="img5">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini6.jpg" alt="img6">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini7.jpg" alt="img7">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini8.jpg" alt="img8">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini9.jpg" alt="img9">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./style/mini10.jpg" alt="img10">
+            </div>
+    </div>
+<!------------------------------------------------------------------------->
+ </div>        
+ </main>
+<!-------js do carrousel-->
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+<!-------------------------------------------->
+</body>
+</html>
